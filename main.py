@@ -38,7 +38,7 @@ def get_params():
     parser.add_argument('--batch_size', type=int, default=256)
     parser.add_argument('--alpha_T', default=0.8, type=float, help='distillation temperature')
     parser.add_argument('--data_type', type=str, default='cifar10',choices=['mnist', 'cifar10', 'cifar100'], help='type of dataset')
-    parser.add_argument('--data_path', type=str, default='/home/lmc906/EQ_PAMI/EQ_code/EQ_code/dataset', help='download dataset path')
+    parser.add_argument('--data_path', type=str, default='./dataset', help='download dataset path')
     parser.add_argument('--model',type=str,default='resnet20_cifar10',help='the choice of model',
                         choices=['lenet5', 'resnet18','resnet50', 'resnet20_cifar10', 'resnet20_cifar100'])
     parser.add_argument('--seed', default=3407, type=int,help='seed for initializing training. ')
