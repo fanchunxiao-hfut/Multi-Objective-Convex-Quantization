@@ -17,7 +17,7 @@ The main.py file is used to train the full-precision model, and the weight distr
 
 The trained model also needs to be converted into a quantized model and the accuracy of the quantized model tested:
 ```
-python quant_test.py --pretrainedModel /QE_code/save_model/r20_c10_4bit/model_name.pth --q_bit 4
+python quant_test.py --pretrainedModel./save_model_r20_c10_4bit/model_name.pth --q_bit 4
 ```
 
 We provide some of our trained quantized models
